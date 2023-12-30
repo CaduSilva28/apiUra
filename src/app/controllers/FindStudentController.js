@@ -16,7 +16,7 @@ class findStudentController {
     }
 
     async findStudent(req, res){
-        const nuRegistration = req.body.nuRegistration;
+        const nuRegistration = req.header('nuRegistration');
         
         try{
             const student = jsonStudents.find(student => student.nuRegistration === nuRegistration);
