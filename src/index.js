@@ -1,7 +1,7 @@
 import express from 'express';
-import routes from './src/routes/routes';
+import routes from './routes/routes';
 import bodyParser from 'body-parser';
-import authentication from './src/middleware/authentication';
+import authentication from './middleware/authentication';
 
 require('dotenv').config({ path:'./config/homolog.env'});
 
